@@ -63,11 +63,27 @@ button {
 .site-content {
     padding-bottom: 72px;
     @include desktop {
-        position: relative;
-        margin: 4.5rem 175px 1.5rem;
+        margin: 4.5rem 3.15rem 1.5rem;
         padding-bottom: 64px;
     }
 }
+
+.quote-container {
+    @include desktop {
+        display: flex;
+    }
+}
+
+i.fas.fa-quote-left, i.fas.fa-quote-right {
+    display: none;
+    @include desktop {
+        display: flex;
+        color: $color__brand-color;
+        font-size: 125px;
+        padding-top: 4rem;
+    }
+}
+
 
 /* All Archives Page */
 

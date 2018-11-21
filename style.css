@@ -636,9 +636,25 @@ button {
   padding-bottom: 72px; }
   @media (min-width: 1080px) {
     .site-content {
-      position: relative;
-      margin: 4.5rem 175px 1.5rem;
+      margin: 4.5rem 3.15rem 1.5rem;
       padding-bottom: 64px; } }
+
+@media (min-width: 1080px) {
+  .quote-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+i.fas.fa-quote-left, i.fas.fa-quote-right {
+  display: none; }
+  @media (min-width: 1080px) {
+    i.fas.fa-quote-left, i.fas.fa-quote-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #00cc00;
+      font-size: 125px;
+      padding-top: 4rem; } }
 
 /* All Archives Page */
 /* Submit a Quote Page */

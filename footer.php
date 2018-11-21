@@ -8,7 +8,8 @@
 ?>
 
 			</div><!-- #content -->
-
+			<i class="fas fa-quote-right"></i>
+</div><!-- .quote-container -->
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 					<div>
