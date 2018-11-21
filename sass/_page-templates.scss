@@ -2,6 +2,58 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+/* Home Page */
+
+.entry-content p, .entry-meta h2 {
+    font-family: 'Exo-Light', sans-serif;
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 0;
+}
+.entry-content p {
+    @include tablet {
+        font-size: 1.75rem;
+    }
+}
+
+p.entry-quote {
+    padding-top: 8px;
+}
+
+.entry-meta {
+    display: flex;
+    padding-bottom: 1.5rem;
+    span {
+        font-family: 'Exo-LightItalic', sans-serif;
+        font-size: 1.25rem; 
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid $color__brand-color;
+    box-shadow: none;
+    color: $color__brand-color;
+    font-size: 1rem;
+    text-shadow: none;
+    padding: 0.75rem 2.3rem;
+    @include tablet {
+        font-size: 1.25rem;
+    }
+    &:hover {
+        border: 2px solid $color__link-hover;
+        box-shadow: none;
+        color: $color__link-hover; 
+    }
+}
+
+.site-content {
+    padding-bottom: 84px;
+}
+
 /* All Archives Page */
 
 /* Submit a Quote Page */

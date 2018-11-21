@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+body {
+  max-width: 1080px;
+  padding: 2.5%;
+}
+
 
 html {
   box-sizing: border-box;
@@ -29,7 +34,6 @@ q {
 }
 
 hr {
-  background-color: $color__background-hr;
   border: 0;
   height: 1px;
   margin-bottom: $base__space-unit;
@@ -60,11 +64,6 @@ dt {
 
 dd {
   margin: 0 $base__space-unit $base__space-unit;
-}
-
-img {
-  height: auto; /* Make sure images are scaled correctly. */
-  max-width: 100%; /* Adhere to container width. */
 }
 
 table {

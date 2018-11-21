@@ -1,0 +1,36 @@
+.site-info {
+    font-family: 'Exo-Light', sans-serif;
+    line-height: 1;
+    // @include tablet {
+    //     display: flex;
+    // }
+    nav.main-navigation {
+        padding-bottom: 1rem;
+        @include tablet {
+            width: 298px;
+        }
+        li {
+            padding: 0 1rem;
+            border-right: $border__solid;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                border: none;
+                @include tablet {
+                    border-right: $border__solid; 
+                }
+            }
+        }
+    }
+    // p.string-span {
+    //     @include tablet {
+    //     width: 200px;
+    //     float: right;
+    //     padding-left: 1rem;
+    //     }
+    // }
+    a.link-span {
+        text-decoration: none;
+    }
+}
