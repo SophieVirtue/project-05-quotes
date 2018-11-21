@@ -586,22 +586,28 @@ object {
   font-weight: normal;
   margin: 0; }
 
-@media (min-width: 620px) {
-  .entry-content p {
-    font-size: 1.75rem; } }
-
-p.entry-quote {
-  padding-top: 8px; }
+.entry-content p {
+  padding-top: 17px;
+  padding-bottom: 24px; }
+  @media (min-width: 620px) {
+    .entry-content p {
+      font-size: 1.75rem;
+      padding-top: 21px; } }
+  @media (min-width: 1080px) {
+    .entry-content p {
+      font-size: 2.5rem;
+      padding-top: 0; } }
 
 .entry-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 1.5rem; }
-  .entry-meta span {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 3rem; }
+  .entry-meta h2 {
+    display: inline; }
+  .entry-meta span.source {
     font-family: 'Exo-LightItalic', sans-serif;
     font-size: 1.25rem; }
-    .entry-meta span a {
+    .entry-meta span.source a {
       text-decoration: none; }
 
 button {
@@ -612,10 +618,14 @@ button {
   color: #00cc00;
   font-size: 1rem;
   text-shadow: none;
-  padding: 0.75rem 2.3rem; }
+  padding: 0.75rem 2.25rem; }
   @media (min-width: 620px) {
     button {
       font-size: 1.25rem; } }
+  @media (min-width: 1080px) {
+    button {
+      display: block;
+      margin: 0 auto; } }
   button:hover {
     border: 2px solid #018301;
     -webkit-box-shadow: none;
@@ -623,7 +633,12 @@ button {
     color: #018301; }
 
 .site-content {
-  padding-bottom: 84px; }
+  padding-bottom: 72px; }
+  @media (min-width: 1080px) {
+    .site-content {
+      position: relative;
+      margin: 4.5rem 175px 1.5rem;
+      padding-bottom: 64px; } }
 
 /* All Archives Page */
 /* Submit a Quote Page */
@@ -634,12 +649,21 @@ img.header-logo {
   @media (min-width: 620px) {
     img.header-logo {
       width: 500px; } }
+  @media (min-width: 1080px) {
+    img.header-logo {
+      width: 700px;
+      display: block;
+      margin: 0 auto; } }
 
 .site-info {
   font-family: 'Exo-Light', sans-serif;
   line-height: 1; }
+  @media (min-width: 1080px) {
+    .site-info {
+      position: relative;
+      float: right; } }
   .site-info nav.main-navigation {
-    padding-bottom: 1rem; }
+    padding-bottom: 1.25rem; }
     @media (min-width: 620px) {
       .site-info nav.main-navigation {
         width: 298px; } }
@@ -653,5 +677,11 @@ img.header-logo {
         @media (min-width: 620px) {
           .site-info nav.main-navigation li:last-child {
             border-right: 1px solid #ffffff; } }
+  @media (min-width: 620px) {
+    .site-info p.string-span {
+      padding-left: 313px; } }
+  @media (min-width: 1080px) {
+    .site-info p.string-span {
+      margin-top: 0; } }
   .site-info a.link-span {
     text-decoration: none; }

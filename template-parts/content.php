@@ -9,10 +9,11 @@
  $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 
 ?>
+<i class="fas fa-quote-left"></i>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+    
 	<div class="entry-content">
-		<?php the_content( '<p class="entry-quote">', '</p>'); ?>
+		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 
 	<div class="entry-meta">
@@ -27,7 +28,7 @@
 	</div><!-- .entry-meta -->
 
 </article><!-- #post-## -->
-
+<i class="fas fa-quote-right"></i>
 <?php 
   if( is_home() || is_single() ): ?>
 	<button type="button" id="new-quote-button">Show Me Another!</button>

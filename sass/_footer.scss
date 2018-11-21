@@ -1,11 +1,12 @@
 .site-info {
     font-family: 'Exo-Light', sans-serif;
     line-height: 1;
-    // @include tablet {
-    //     display: flex;
-    // }
+    @include desktop {
+        position: relative;
+        float: right;
+    }
     nav.main-navigation {
-        padding-bottom: 1rem;
+        padding-bottom: 1.25rem;
         @include tablet {
             width: 298px;
         }
@@ -23,13 +24,14 @@
             }
         }
     }
-    // p.string-span {
-    //     @include tablet {
-    //     width: 200px;
-    //     float: right;
-    //     padding-left: 1rem;
-    //     }
-    // }
+    p.string-span {
+        @include tablet {
+        padding-left: 313px;
+        }
+        @include desktop {
+            margin-top: 0;
+        }
+    }
     a.link-span {
         text-decoration: none;
     }

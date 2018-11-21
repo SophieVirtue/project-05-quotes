@@ -11,19 +11,25 @@
     margin: 0;
 }
 .entry-content p {
+    padding-top: 17px;
+    padding-bottom: 24px;
     @include tablet {
         font-size: 1.75rem;
+        padding-top: 21px;
+    }
+    @include desktop {
+        font-size: 2.5rem;
+        padding-top: 0;
     }
 }
 
-p.entry-quote {
-    padding-top: 8px;
-}
-
 .entry-meta {
-    display: flex;
-    padding-bottom: 1.5rem;
-    span {
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+    h2 {
+        display: inline;
+    }
+    span.source {
         font-family: 'Exo-LightItalic', sans-serif;
         font-size: 1.25rem; 
         a {
@@ -39,9 +45,13 @@ button {
     color: $color__brand-color;
     font-size: 1rem;
     text-shadow: none;
-    padding: 0.75rem 2.3rem;
+    padding: 0.75rem 2.25rem;
     @include tablet {
         font-size: 1.25rem;
+    }
+    @include desktop {
+        display: block;
+        margin: 0 auto;
     }
     &:hover {
         border: 2px solid $color__link-hover;
@@ -51,7 +61,12 @@ button {
 }
 
 .site-content {
-    padding-bottom: 84px;
+    padding-bottom: 72px;
+    @include desktop {
+        position: relative;
+        margin: 4.5rem 175px 1.5rem;
+        padding-bottom: 64px;
+    }
 }
 
 /* All Archives Page */

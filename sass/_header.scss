@@ -5,4 +5,9 @@ img.header-logo {
   @include tablet {
     width: 500px;
   }
+  @include desktop {
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+  }
 }
