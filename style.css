@@ -305,7 +305,9 @@ big {
 --------------------------------------------------------------*/
 body {
   max-width: 1080px;
-  padding: 2.5%; }
+  padding: 2.5%;
+  margin-left: auto;
+  margin-right: auto; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -587,12 +589,11 @@ object {
   margin: 0; }
 
 .entry-content p {
-  padding-top: 17px;
+  padding-top: 41px;
   padding-bottom: 24px; }
   @media (min-width: 620px) {
     .entry-content p {
-      font-size: 1.75rem;
-      padding-top: 21px; } }
+      font-size: 1.75rem; } }
   @media (min-width: 1080px) {
     .entry-content p {
       font-size: 2.5rem;
@@ -655,6 +656,31 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
       color: #00cc00;
       font-size: 125px;
       padding-top: 4rem; } }
+
+/* About Page */
+.about h1 {
+  padding-top: 1.25rem;
+  font-weight: normal; }
+  @media (min-width: 1080px) {
+    .about h1 {
+      padding-top: 0;
+      margin-top: 0; } }
+
+.about .about-p {
+  padding-bottom: 1.4rem; }
+
+.about p {
+  padding-top: 2px;
+  padding-bottom: 0;
+  font-size: 1rem; }
+
+.about img {
+  width: 1rem;
+  height: auto;
+  display: inline; }
+
+.about a {
+  text-decoration: none; }
 
 /* All Archives Page */
 /* Submit a Quote Page */

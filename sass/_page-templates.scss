@@ -11,11 +11,10 @@
     margin: 0;
 }
 .entry-content p {
-    padding-top: 17px;
+    padding-top: 41px;
     padding-bottom: 24px;
     @include tablet {
         font-size: 1.75rem;
-        padding-top: 21px;
     }
     @include desktop {
         font-size: 2.5rem;
@@ -84,6 +83,34 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
     }
 }
 
+/* About Page */
+
+.about {
+    h1 {
+        padding-top: 1.25rem;
+        font-weight: normal;
+        @include desktop {
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+    .about-p {
+        padding-bottom: 1.4rem;
+    }
+    p {
+        padding-top: 2px;
+        padding-bottom: 0;
+        font-size: 1rem;
+    }
+    img {
+        width: 1rem;
+        height: auto;
+        display: inline;
+    }
+    a {
+        text-decoration: none;
+    }
+}
 
 /* All Archives Page */
 
