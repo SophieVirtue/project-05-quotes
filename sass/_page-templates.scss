@@ -167,6 +167,63 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
 
 .single-post .entry-content p {
     padding-top: 17px;
+    @include tablet {
+        padding-top: 21px;
+    }
+    @include desktop {
+        padding-top: 0;
+    }
+}
+
+/* Category and Tag page */
+
+.category-tag {
+    header {
+        padding-top: 1.25rem;
+        padding-bottom: 0.15rem;
+        border-bottom: $border__dashed;
+        @include desktop {
+            padding-top: 0;
+        }
+        h1 {
+            font-weight: normal;
+            @include desktop {
+                margin-top: 0;
+            }
+        }
+    }
+    .entry-content p{
+        padding-top: 1.5rem;
+        @include tablet {
+            padding-top: 1.75rem;
+            @include desktop {
+                padding-top: 2.5rem;
+            }
+        }
+    }
+    .entry-meta {
+        border-bottom: $border__dashed;  
+    }
+    nav {
+        margin-bottom: 0;
+        padding-top: 3rem;
+        span {
+            padding-right: 0.5rem;
+            font-family: 'Exo-Light', sans-serif;  
+        }
+        a {
+            text-decoration: none;
+            font-family: 'Exo-Light', sans-serif;
+            padding-right: 0.5rem;
+        }
+    }
+}
+
+.category-tag-content {
+    padding-bottom: 72px;
+    @include desktop {
+        padding-bottom: 64px;
+    }
 }
 
 /* Submit a Quote Page */

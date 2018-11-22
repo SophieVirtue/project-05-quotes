@@ -31,5 +31,5 @@
 			</header><!-- #masthead -->
 			<div class="quote-container">
 			<i class="fas fa-quote-left"></i>
-			<div id="content" class="site-content">
+			<div id="content" class="site-content category-tag-content">
 			
