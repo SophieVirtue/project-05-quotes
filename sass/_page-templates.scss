@@ -148,13 +148,18 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
                 font-family: 'Exo-Light', sans-serif;
             }
         }
-    }   
+    } 
+    @include tablet {
+        .tag-archives ul ul.wp-tag-cloud li a.tag-cloud-link {
+            font-size: 1.25rem !important;
+        } 
+    } 
 }
 
 .archive-footer {
     padding-bottom: 3rem;
     @include desktop {
-        padding-bottom: 4.65rem;
+        padding-bottom: 4.75rem;
     }
 }
 

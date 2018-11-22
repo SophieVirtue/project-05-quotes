@@ -717,11 +717,15 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
       text-decoration: none;
       font-family: 'Exo-Light', sans-serif; }
 
+@media (min-width: 620px) {
+  .archives .tag-archives ul ul.wp-tag-cloud li a.tag-cloud-link {
+    font-size: 1.25rem !important; } }
+
 .archive-footer {
   padding-bottom: 3rem; }
   @media (min-width: 1080px) {
     .archive-footer {
-      padding-bottom: 4.65rem; } }
+      padding-bottom: 4.75rem; } }
 
 /* Single Quote Page */
 .single-post .entry-content p {
