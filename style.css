@@ -683,6 +683,50 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
   text-decoration: none; }
 
 /* All Archives Page */
+.archives h1 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.2rem;
+  font-weight: normal; }
+  @media (min-width: 1080px) {
+    .archives h1 {
+      padding-top: 0;
+      margin-top: 0; } }
+
+.archives h2 {
+  font-weight: normal; }
+
+.archives ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1.5rem; }
+  .archives ul .wp-tag-cloud {
+    padding-bottom: 0; }
+  .archives ul li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+    padding-right: 18px; }
+    @media (min-width: 620px) {
+      .archives ul li {
+        font-size: 1.25rem; } }
+    .archives ul li a {
+      text-decoration: none;
+      font-family: 'Exo-Light', sans-serif; }
+
+.archive-footer {
+  padding-bottom: 3rem; }
+  @media (min-width: 1080px) {
+    .archive-footer {
+      padding-bottom: 4.65rem; } }
+
+/* Single Quote Page */
+.single-post .entry-content p {
+  padding-top: 17px; }
+
 /* Submit a Quote Page */
 img.header-logo {
   width: 300px;
