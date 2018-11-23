@@ -1,7 +1,7 @@
 {
   "name": "quotesondev",
   "version": "1.0.0",
-  "description": "Quotes on Dev is a website that generates random quotes...",
+  "description": "Quotes on Dev is a website that generates random tech related quotes.",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {

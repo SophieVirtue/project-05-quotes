@@ -1,9 +1,9 @@
 /*!
-Theme Name: Quotes on Dev Starter Theme
+Theme Name: Quotes on Dev  Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Author: Sophie Virtue
+Author URI: 
+Description: A WordPress  theme for the Quotes on Dev project, forked from Underscores.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -864,6 +864,41 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
     .quote-submission .submit-button {
       font-size: 1.25rem;
       height: auto; } }
+
+/* 404 Page */
+.error-404 {
+  padding-bottom: 2.25rem; }
+  .error-404 h1 {
+    font-weight: normal;
+    margin-top: 0.9rem;
+    margin-bottom: 1.5rem; }
+    @media (min-width: 1080px) {
+      .error-404 h1 {
+        margin-top: 0; } }
+  .error-404 p {
+    font-family: 'Exo-Light', sans-serif; }
+  .error-404 fieldset {
+    border: none;
+    margin: 0;
+    padding: 0; }
+    .error-404 fieldset input {
+      border: 2px solid #00cc00;
+      background-color: transparent;
+      color: #ffffff;
+      padding: .25rem .5rem;
+      width: 240px;
+      font-family: 'Exo-Light', sans-serif; }
+      @media (min-width: 620px) {
+        .error-404 fieldset input {
+          font-size: 1.25rem; } }
+  .error-404 button {
+    border: 0;
+    padding: 0; }
+    @media (min-width: 1080px) {
+      .error-404 button {
+        display: inline; } }
+    .error-404 button i {
+      padding-left: 0.5rem; }
 
 img.header-logo {
   width: 300px;

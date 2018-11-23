@@ -317,3 +317,46 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
         }
     }
 }
+
+/* 404 Page */
+
+.error-404 {
+    padding-bottom: 2.25rem;
+    h1 {
+        font-weight: normal;
+        margin-top: 0.9rem;
+        margin-bottom: 1.5rem;
+        @include desktop {
+            margin-top: 0;
+        }
+    }
+    p {
+        font-family: 'Exo-Light', sans-serif;
+    }
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+        input {
+            border: 2px solid $color__brand-color;
+            background-color: transparent;
+            color: $color__text-main;
+            padding: .25rem .5rem;
+            width: 240px;
+            font-family: 'Exo-Light', sans-serif;
+            @include tablet {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    button {
+        border: 0;
+        padding: 0;
+        @include desktop {
+            display: inline;
+        }
+        i {
+            padding-left: 0.5rem;
+        }
+    }
+}

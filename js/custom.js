@@ -1,5 +1,5 @@
 (function($){
-    $(document).ready(function() {
+    $(function() {
 
         let lastPage = '';
     
@@ -16,26 +16,27 @@
             method: 'GET',
             url: qod_vars.rest_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1', 
         }).done(function(data){
+            const quote = data[0];
 
-            history.pushState(null, null, qod_vars.home_url + '/' + data[0].slug)
+            history.pushState(null, null, qod_vars.home_url + '/' + quote.slug)
 
             $('.post').empty();
 
             $('.post').append(
             `<div class="entry-content">
-             ${data[0].content.rendered}
+             ${quote.content.rendered}
             </div>
             <div class="entry-meta">
-                <h2 class="entry-title">&mdash; ${data[0].title.rendered}</h2>
+                <h2 class="entry-title">&mdash; ${quote.title.rendered}</h2>
                 <span class="source">
                     
                 </span>
             </div>`);
 
-            if (data[0]._qod_quote_source_url.length > 0) {
-                $('.source').append(`,<a href="${data[0]._qod_quote_source_url}">&nbsp;${data[0]._qod_quote_source}</a>`);
-              } else if (data[0]._qod_quote_source.length > 0) {
-                $('.source').append(`, ${data[0]._qod_quote_source}`);
+            if (quote._qod_quote_source_url.length > 0) {
+                $('.source').append(`,<a href="${quote._qod_quote_source_url}">&nbsp;${quote._qod_quote_source}</a>`);
+              } else if (quote._qod_quote_source.length > 0) {
+                $('.source').append(`, ${quote._qod_quote_source}`);
               } else {
                 $('.source').append(``);
               }
@@ -72,12 +73,12 @@
                 content: quoteContent,
                 _qod_quote_source: quoteSource, 
                 _qod_quote_source_url: quoteSourceUrl,
-                status: 'publish'
+                status: 'pending'
             },
             beforeSend: function(xhr) {
                 xhr.setRequestHeader( 'X-WP-Nonce', qod_vars.nonce );
             }
-        }).done(function(){
+        }).done(function(){  
             $('#quote-submission-form').slideUp(500);
             $('.quote-submission').append(`<p class="replace-content">Thanks, your quote submission was received!</p>`);
         }).fail(function(){
