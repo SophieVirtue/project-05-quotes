@@ -262,4 +262,58 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
     p.login {
         margin-bottom: 0;
     }
+    label {
+        font-family: 'Exo-Light', sans-serif;
+        display: block;
+        padding-bottom: 0.8rem;
+    }
+    input, textarea {
+        display: block;
+        background-color: transparent;
+        color: $color__text-main;
+        border: 2px solid $color__brand-color;
+        font-family: 'Exo-Light', sans-serif;
+        &:hover {
+            border: 2px solid $color__link-hover;  
+        }
+        &:focus {
+            outline: 0;
+            color: $color__text-main;
+            border: 2px solid $color__text-main;
+        }
+    }
+    input {
+        width: 65%;
+        @include tablet {
+            height: 2.5rem;
+        }
+        @include desktop {
+            width: 60%
+        }
+    }
+    textarea {
+        height: 6.25rem;
+    }
+    .label-input {
+        padding-bottom: 1.5rem;
+    }
+    .submit-button {
+        width: auto;
+        font-size: 1rem;
+        padding: 0.75rem 2rem;
+        background-color: transparent;
+        color: $color__brand-color;
+        &:hover {
+            color: $color__link-hover;
+        }
+        &:focus {
+            outline: 0;
+            color: $color__link-hover;
+            border: 2px solid $color__link-hover;
+        }
+        @include tablet {
+            font-size: 1.25rem;
+            height: auto;
+        }
+    }
 }

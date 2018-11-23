@@ -8,6 +8,11 @@ body {
   margin-right: auto;
 }
 
+.content-area {
+  @include desktop {
+    width: 675px;
+  }
+}
 
 html {
   box-sizing: border-box;

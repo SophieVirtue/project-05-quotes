@@ -309,6 +309,10 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+@media (min-width: 1080px) {
+  .content-area {
+    width: 675px; } }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -810,6 +814,56 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
 
 .quote-submission p.login {
   margin-bottom: 0; }
+
+.quote-submission label {
+  font-family: 'Exo-Light', sans-serif;
+  display: block;
+  padding-bottom: 0.8rem; }
+
+.quote-submission input, .quote-submission textarea {
+  display: block;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #00cc00;
+  font-family: 'Exo-Light', sans-serif; }
+  .quote-submission input:hover, .quote-submission textarea:hover {
+    border: 2px solid #018301; }
+  .quote-submission input:focus, .quote-submission textarea:focus {
+    outline: 0;
+    color: #ffffff;
+    border: 2px solid #ffffff; }
+
+.quote-submission input {
+  width: 65%; }
+  @media (min-width: 620px) {
+    .quote-submission input {
+      height: 2.5rem; } }
+  @media (min-width: 1080px) {
+    .quote-submission input {
+      width: 60%; } }
+
+.quote-submission textarea {
+  height: 6.25rem; }
+
+.quote-submission .label-input {
+  padding-bottom: 1.5rem; }
+
+.quote-submission .submit-button {
+  width: auto;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: #00cc00; }
+  .quote-submission .submit-button:hover {
+    color: #018301; }
+  .quote-submission .submit-button:focus {
+    outline: 0;
+    color: #018301;
+    border: 2px solid #018301; }
+  @media (min-width: 620px) {
+    .quote-submission .submit-button {
+      font-size: 1.25rem;
+      height: auto; } }
 
 img.header-logo {
   width: 300px;
