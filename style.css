@@ -620,6 +620,8 @@ button {
   font-size: 1rem;
   text-shadow: none;
   padding: 0.75rem 2.25rem; }
+  button:focus {
+    outline: 0; }
   @media (min-width: 620px) {
     button {
       font-size: 1.25rem; } }
@@ -781,6 +783,34 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
       padding-bottom: 64px; } }
 
 /* Submit a Quote Page */
+.quote-submission header {
+  padding-top: 20px; }
+  @media (min-width: 620px) {
+    .quote-submission header {
+      padding-top: 19px; } }
+  @media (min-width: 1080px) {
+    .quote-submission header {
+      padding-top: 0; } }
+  .quote-submission header h1 {
+    font-weight: normal;
+    margin-bottom: 21px; }
+    @media (min-width: 1080px) {
+      .quote-submission header h1 {
+        margin-top: 0; } }
+
+.quote-submission p {
+  font-family: 'Exo-Light', sans-serif;
+  margin-top: 0; }
+  @media (min-width: 620px) {
+    .quote-submission p {
+      padding-top: 1px;
+      margin-bottom: 23px; } }
+  .quote-submission p a {
+    text-decoration: none; }
+
+.quote-submission p.login {
+  margin-bottom: 0; }
+
 img.header-logo {
   width: 300px;
   height: auto;

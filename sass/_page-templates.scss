@@ -45,6 +45,9 @@ button {
     font-size: 1rem;
     text-shadow: none;
     padding: 0.75rem 2.25rem;
+    &:focus {
+        outline: 0;
+      }
     @include tablet {
         font-size: 1.25rem;
     }
@@ -227,3 +230,36 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
 }
 
 /* Submit a Quote Page */
+
+.quote-submission {
+    header {
+        padding-top: 20px;
+        @include tablet {
+            padding-top: 19px;
+        }
+        @include desktop {
+            padding-top: 0;
+        }
+        h1 {
+            font-weight: normal;
+            margin-bottom: 21px;
+            @include desktop {
+                margin-top: 0;
+            }
+        }
+    }
+    p {
+        font-family: 'Exo-Light', sans-serif;
+        margin-top: 0;
+        @include tablet {
+            padding-top: 1px;
+            margin-bottom: 23px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    p.login {
+        margin-bottom: 0;
+    }
+}
