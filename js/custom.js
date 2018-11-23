@@ -42,7 +42,7 @@
             
             }).fail(function(err){
             $('.post').empty();
-            $('.post').append('<p>Apologies, this page is not loading...</p>');
+            alert('Apologies, this page is not loading...');
         });
     }
 
@@ -56,27 +56,32 @@
         postQuote();
     });
 
-    //page 34 of AJAX lesson
     function postQuote(){
 
-        //get values of your form inputs
-        //  const quoteTitle = $('#form-id').val();
+         const quoteTitle = $('#quote-author').val();
+         const quoteContent = $('#quote-content').val();
+         const quoteSource = $('#quote-source').val();
+         const quoteSourceUrl = $('#quote-source-url').val();
+
 
         $.ajax({
             method: 'POST',
             url: qod_vars.rest_url + 'wp/v2/posts',
             data: {
-                title: quoteTitle, //for example
-                //send title, quote author, source, etc. //also need to update the status somewhere
+                title: quoteTitle, 
+                content: quoteContent,
+                _qod_quote_source: quoteSource, 
+                _qod_quote_source_url: quoteSourceUrl,
+                status: 'publish'
             },
             beforeSend: function(xhr) {
                 xhr.setRequestHeader( 'X-WP-Nonce', qod_vars.nonce );
             }
         }).done(function(){
-            // .slideUp (jQuery) the form
-            //append a success message
+            $('#quote-submission-form').slideUp(500);
+            $('.quote-submission').append(`<p class="replace-content">Thanks, your quote submission was received!</p>`);
         }).fail(function(){
-            //ouput a message for the user saying something went wrong
+            alert('We are not able to submit this quote, are you missing a field?');
         });
     }
 

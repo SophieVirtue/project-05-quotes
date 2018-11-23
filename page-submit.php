@@ -17,6 +17,7 @@ get_header(); ?>
 
                 <?php if( is_user_logged_in() && current_user_can( 'edit_posts' ) ):  ?>
                     <div class="quote-submission-wrapper">
+                    
                         <form name="quoteForm" id="quote-submission-form">
                             <div>
                                 <label for="quote-author">Author of Quote</label>
