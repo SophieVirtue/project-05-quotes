@@ -904,6 +904,81 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
     .error-404 button i {
       padding-left: 0.5rem; }
 
+/* Search Results Page */
+.search-no-results {
+  padding-bottom: 2.25rem; }
+  .search-no-results header.site-header {
+    padding-bottom: 4rem;
+    border-bottom: 1px dotted #ffffff; }
+    @media (min-width: 1080px) {
+      .search-no-results header.site-header {
+        padding-bottom: 0;
+        border-bottom: none; } }
+  @media (min-width: 1080px) {
+    .search-no-results header.page-header {
+      padding-top: 0.25rem;
+      border-top: 1px dotted #ffffff; } }
+  .search-no-results section {
+    padding-top: 0.5rem; }
+  .search-no-results fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 3px; }
+    .search-no-results fieldset input {
+      border: 2px solid #00cc00;
+      background-color: transparent;
+      color: #ffffff;
+      padding: .25rem .5rem;
+      width: 240px;
+      font-family: 'Exo-Light', sans-serif; }
+      .search-no-results fieldset input:focus {
+        outline: 0;
+        color: #ffffff;
+        border: 2px solid #ffffff; }
+      @media (min-width: 620px) {
+        .search-no-results fieldset input {
+          font-size: 1.25rem; } }
+  .search-no-results button {
+    border: 0;
+    padding: 0; }
+    @media (min-width: 1080px) {
+      .search-no-results button {
+        display: inline; } }
+    .search-no-results button i {
+      padding-left: 0.5rem; }
+  .search-no-results .site-content {
+    padding-bottom: 110px; }
+
+.search-results h1 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dotted #ffffff; }
+  @media (min-width: 1080px) {
+    .search-results h1 {
+      margin-top: 0;
+      padding-top: 0; } }
+
+.search-results h2 a {
+  text-decoration: none;
+  font-weight: normal; }
+
+.search-results p {
+  font-family: 'Exo-Light', sans-serif; }
+
+.search-results .site-content {
+  padding-bottom: 45px; }
+
+.search-results nav.number-pagination {
+  padding: 1.5rem 0; }
+  .search-results nav.number-pagination span {
+    padding-right: 0.5rem;
+    font-family: 'Exo-Light', sans-serif; }
+  .search-results nav.number-pagination a {
+    text-decoration: none;
+    font-family: 'Exo-Light', sans-serif;
+    padding-right: 0.5rem; }
+
 img.header-logo {
   width: 300px;
   height: auto;

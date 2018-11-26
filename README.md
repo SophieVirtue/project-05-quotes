@@ -16,7 +16,7 @@ A random tech quote generator.
 
 Wordpress, Javascript, PHP, CSS, HTML.
 
-##Learnings
+## Learnings
 
 I did a better job of managing my time with this project.  I put a lot of upfront time working on the styling as the website is responsive, and I knew this would require a little more attention even though the website is fairly simple.
 
