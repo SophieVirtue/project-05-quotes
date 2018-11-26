@@ -344,6 +344,11 @@ i.fas.fa-quote-left, i.fas.fa-quote-right {
             padding: .25rem .5rem;
             width: 240px;
             font-family: 'Exo-Light', sans-serif;
+            &:focus {
+                outline: 0;
+                color: $color__text-main;
+                border: 2px solid $color__text-main;
+            }
             @include tablet {
                 font-size: 1.25rem;
             }
