@@ -24,9 +24,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redacademy/quotesondev-starter.git"
+    "url": "git+https://github.com/SophieVirtue/project-05-quotes"
   },
-  "author": "mandiwise",
+  "author": "SophieVirtue",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/redacademy/quotesondev-starter/issues"
