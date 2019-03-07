@@ -2,26 +2,38 @@
 
 A random tech quote generator.
 
+![](Giphy1.gif)
+
+![](Giphy2.gif)
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- JQuery
+- PHP
+- Gulp
+- Wordpress
+
 ## Installation
 
 **Run locally with Gulp:**
 
-`> npm install`
+```bash
+npm install
+```
 
 **Build for production:**
 
-`> npx gulp`
-
-## Technologies Used
-
-Wordpress, Javascript, PHP, CSS, HTML.
-
-## Learnings
-
-I did a better job of managing my time with this project.  I put a lot of upfront time working on the styling as the website is responsive, and I knew this would require a little more attention even though the website is fairly simple.
-
-I had a few moemnts where things started to click more with Javascript in general than they have in the past.
+```bash
+npx gulp
+```
 
 ## Acknowledgement
 
 The starter theme was provided by RED Academy and was based on Underscores. 
+
+## Author
+
+Sophie Virtue  [LinkedIn](https://www.linkedin.com/in/sophie-virtue-65467849/)
